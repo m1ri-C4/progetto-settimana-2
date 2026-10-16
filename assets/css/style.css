@@ -12,6 +12,7 @@ body {
     background: #fff;
 }
 
+/* -----------  HEADER  -------- */
 header {
     background-color: #131921;
     padding-bottom: 10px;
@@ -65,11 +66,27 @@ header button {
     margin-left: 10px;
 }
 
+/* -----------  HERO  -------- */
+
+.hero {
+    background-color: #303f51;
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+.hero h4 {
+    font-weight: normal;
+}
+
+/* -----------  CATEGORIE  -------- */
 
 
 
 
 
+
+/* -----------  FOOTER  -------- */
 footer {
     background-color: #232f3e;
 }

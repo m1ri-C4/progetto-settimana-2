@@ -133,23 +133,23 @@ console.log(`Giacca in pelle: ${myPriceString()}`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-function myStars(raiting = '') {
-   if (raiting === 1) {
+function myStars(rating) {
+
+   if (rating === 1) {
       return '★☆☆☆☆';
-   } else if (raiting === 2) {
+   } else if (rating === 2) {
       return '★★☆☆☆';
-   } else if (raiting === 3) {
+   } else if (rating === 3) {
       return '★★★☆☆';
-   } else if (raiting === 4) {
+   } else if (rating === 4) {
       return '★★★★☆';
-   } else (raiting === 5)
-   return '★★★★★';
+   } else if (rating === 5)
+      return '★★★★★';
+}
+for (let i = 0; i < prodotti.length; i++) {
+   console.log(`${prodotti[i].nome}: rating ${prodotti[i].rating} → ${myStars(prodotti[i].rating)}`);
 }
 
-console.log(`Monitor: raiting 2 → '${myStars(2)}'`);
-console.log(`Frigo: raiting 4 → '${myStars(4)}'`);
-console.log(`Tavolo: raiting 2 → '${myStars(1)}'`);
-console.log(`Computer: raiting 5→ '${myStars(5)}'`);
 
 /* VERSIONE INTERMEDIA — Filtro per categoria
    Funzione che riceve il parametro categoria e filtra l'array prodotti mostrando solo i prodotti della categoria ricevuta
@@ -201,7 +201,8 @@ function renderProdotti(prodotti) {
        <td>${prodotti[i].nome} </td>
        <td> ${prodotti[i].prezzo}</td>
        <td> ${prodotti[i].categoria}</td>
-       <td> ${prodotti[i].rating}</td>
+       <td> ${prodotti[i].rating} </td>
+       <td> ${myStars(prodotti[i].rating)}</td>
       </tr>`;
    }
 }

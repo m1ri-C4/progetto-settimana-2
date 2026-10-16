@@ -121,11 +121,11 @@ const prodotti = [
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 function myPriceString(price = '') {
-   return '€ 105,99';
+   return `€ ${price.toFixed(2).replace(".", ",")}`;
 }
 
-console.log(`Giacca in pelle: ${myPriceString()}`);
-
+console.log(`Giacca in pelle: ${myPriceString(1160.99)}`);
+ 
 /* VERSIONE INTERMEDIA — stelline(rating)
    Funzione che ritorna una stringa di stelline piene/vuote.
    Esempio: rating 3 → "★★★☆☆"

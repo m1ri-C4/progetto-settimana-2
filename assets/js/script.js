@@ -156,13 +156,34 @@ console.log(`Computer: raiting 5→ '${myStars(5)}'`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function filtroPerCategoria(lista, categoria) {
+   const trovati = [];
+   for (const p of lista) {
+      if (p.categoria === categoria) {
+         trovati.push(p);
+      }
+   }
+   return trovati;
+}
 
+console.log(filtroPerCategoria(prodotti, 'mobili')); // verifica dei possibili argomenti
+console.log(filtroPerCategoria(prodotti, 'Cancelleria'));
 
 /* VERSIONE INTERMEDIA — Filtro disponibilità e rating
    Funzione che genera un array filtrato dall'array prodotti, mostrando soltanto i prodotti disponibili con rating >= 3
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function filtroDisponibiltaERating(prodotti) {
+   const filtro = [];
+   for (let i = 0; i < prodotti.length; i++) {
+      if (prodotti[i].disponibile === true && prodotti[i].rating >= 3) {
+         filtro.push(prodotti[i]);
+      }
+   }
+   return filtro;
+}
+console.log(filtroDisponibiltaERating(prodotti));
 
 /* --------------------------------------------------------------
 
@@ -172,6 +193,7 @@ console.log(`Computer: raiting 5→ '${myStars(5)}'`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
 
 
 /* VERSIONE AVANZATA — Aggiungi al carrello

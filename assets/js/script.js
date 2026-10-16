@@ -15,7 +15,104 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+const prodotti = [
+   {
+      nome: 'Penna',
+      categoria: 'Cancelleria',
+      prezzo: '1',
+      rating: 3,
+      immagine: 'img.jpg',
+      disponibile: true
+   },
+   {
+      nome: 'Cassettiera',
+      categoria: 'Mobili',
+      prezzo: '300',
+      rating: 4,
+      immagine: 'img.jpg',
+      disponibile: true
+   },
+   {
+      nome: 'Cucina in legno di quercia',
+      categoria: 'Mobili',
+      prezzo: '3.500',
+      rating: 5,
+      immagine: 'img.jpg',
+      disponibile: false
+   },
+   {
+      nome: 'Astuccio',
+      categoria: 'Cancelleria',
+      prezzo: '3.50',
+      rating: 3,
+      immagine: 'img.jpg',
+      disponibile: true
+   },
+   {
+      nome: 'Gomma',
+      categoria: 'Cancelleria',
+      prezzo: '0.50',
+      rating: 3,
+      immagine: 'img.jpg',
+      disponibile: false
+   },
+   {
+      nome: 'Tavolo in marmo',
+      categoria: 'Mobili',
+      prezzo: '1.500',
+      rating: 5,
+      immagine: 'img.jpg',
+      disponibile: true
+   },
+   {
+      nome: 'Diario Comix',
+      categoria: 'Cancelleria',
+      prezzo: '3.50',
+      rating: 3,
+      immagine: 'img.jpg',
+      disponibile: false
+   },
+   {
+      nome: 'Divano in alcantara',
+      categoria: 'Mobili',
+      prezzo: '2.350',
+      rating: 4,
+      immagine: 'img.jpg',
+      disponibile: false
+   },
+   {
+      nome: 'Pennarelli',
+      categoria: 'Cancelleria',
+      prezzo: '2.50',
+      rating: 3,
+      immagine: 'img.jpg',
+      disponibile: true
+   },
+   {
+      nome: 'Zaino',
+      categoria: 'Cancelleria',
+      prezzo: '20',
+      rating: 3,
+      immagine: 'img.jpg',
+      disponibile: true
+   },
+   {
+      nome: 'Armadio',
+      categoria: 'Mobili',
+      prezzo: '900',
+      rating: 3,
+      immagine: 'img.jpg',
+      disponibile: false
+   },
+   {
+      nome: 'Quaderno',
+      categoria: 'Cancelleria',
+      prezzo: '1',
+      rating: 3,
+      immagine: 'img.jpg',
+      disponibile: true
+   }
+];
 
 /* VERSIONE INTERMEDIA — formattaPrezzo(prezzo)
    Funzione che ritorna una stringa tipo "€ 19,99".
@@ -23,7 +120,11 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function myPriceString(price = '') {
+   return '€ 105,99';
+}
 
+console.log(`Giacca in pelle: ${myPriceString()}`);
 
 /* VERSIONE INTERMEDIA — stelline(rating)
    Funzione che ritorna una stringa di stelline piene/vuote.
@@ -32,12 +133,30 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function myStars(raiting = '') {
+   if (raiting === 1) {
+      return '★☆☆☆☆';
+   } else if (raiting === 2) {
+      return '★★☆☆☆';
+   } else if (raiting === 3) {
+      return '★★★☆☆';
+   } else if (raiting === 4) {
+      return '★★★★☆';
+   } else (raiting === 5)
+   return '★★★★★';
+}
+
+console.log(`Monitor: raiting 2 → '${myStars(2)}'`);
+console.log(`Frigo: raiting 4 → '${myStars(4)}'`);
+console.log(`Tavolo: raiting 2 → '${myStars(1)}'`);
+console.log(`Computer: raiting 5→ '${myStars(5)}'`);
 
 /* VERSIONE INTERMEDIA — Filtro per categoria
    Funzione che riceve il parametro categoria e filtra l'array prodotti mostrando solo i prodotti della categoria ricevuta
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
 
 /* VERSIONE INTERMEDIA — Filtro disponibilità e rating
    Funzione che genera un array filtrato dall'array prodotti, mostrando soltanto i prodotti disponibili con rating >= 3

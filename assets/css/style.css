@@ -83,20 +83,22 @@ header button {
 
 .categorie>p {
     text-align: left;
+    margin-left: 20px;
     font-weight: bold;
     padding-top: 25px;
     padding-bottom: 20px;
 }
 
-.categorie{ 
+.categorie {
     text-align: center;
 }
 
-.categorie a{
+.categorie a {
     display: block;
     margin-left: 10px;
+    margin-bottom: 10px;
     text-align: left;
-    color:#146eb4
+    color: #146eb4
 }
 
 .sottocategorie h2 {
@@ -104,8 +106,9 @@ header button {
     font-weight: normal;
 }
 
-.sottocategorie p{
+.sottocategorie p {
     margin-left: 10px;
+    margin-top: 5px;
     text-align: left;
     font-weight: bold;
 }
@@ -117,7 +120,7 @@ header button {
     border: 1px solid #e6e0d3;
     border-radius: 8px;
     background-color: white;
-    width: 20%;
+    width: 24%;
 }
 
 #uno {
@@ -163,6 +166,11 @@ header button {
     font-size: 50px;
     text-align: center;
 }
+
+#uno,
+#due,
+#tre,
+#quattro:hover {}
 
 /* -----------  FOOTER  -------- */
 footer {

@@ -251,11 +251,22 @@ header button {
 .p3 {
     margin: 10px 0;
     font-weight: bold;
-     font-size: 20px;
+    font-size: 20px;
     color: rgb(207, 67, 67);
 }
 
 /* -----------  FOOTER  -------- */
 footer {
     background-color: #232f3e;
+}
+
+footer table th{
+    color: white;
+    text-align: left;
+}
+
+footer table{
+    width: 100%;
+    margin-left: 20px;
+    padding: 20px;
 }

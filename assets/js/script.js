@@ -19,7 +19,7 @@ const prodotti = [
    {
       nome: 'Penna',
       categoria: 'Cancelleria',
-      prezzo: '1',
+      prezzo: '1 €',
       rating: 3,
       immagine: 'img.jpg',
       disponibile: true
@@ -27,7 +27,7 @@ const prodotti = [
    {
       nome: 'Cassettiera',
       categoria: 'Mobili',
-      prezzo: '300',
+      prezzo: '300 €',
       rating: 4,
       immagine: 'img.jpg',
       disponibile: true
@@ -35,7 +35,7 @@ const prodotti = [
    {
       nome: 'Cucina in legno di quercia',
       categoria: 'Mobili',
-      prezzo: '3.500',
+      prezzo: '3.500 €',
       rating: 5,
       immagine: 'img.jpg',
       disponibile: false
@@ -43,7 +43,7 @@ const prodotti = [
    {
       nome: 'Astuccio',
       categoria: 'Cancelleria',
-      prezzo: '3.50',
+      prezzo: '3.50 €',
       rating: 3,
       immagine: 'img.jpg',
       disponibile: true
@@ -51,7 +51,7 @@ const prodotti = [
    {
       nome: 'Gomma',
       categoria: 'Cancelleria',
-      prezzo: '0.50',
+      prezzo: '0.50 €',
       rating: 3,
       immagine: 'img.jpg',
       disponibile: false
@@ -59,7 +59,7 @@ const prodotti = [
    {
       nome: 'Tavolo in marmo',
       categoria: 'Mobili',
-      prezzo: '1.500',
+      prezzo: '1.500 €',
       rating: 5,
       immagine: 'img.jpg',
       disponibile: true
@@ -67,7 +67,7 @@ const prodotti = [
    {
       nome: 'Diario Comix',
       categoria: 'Cancelleria',
-      prezzo: '3.50',
+      prezzo: '3.50 €',
       rating: 3,
       immagine: 'img.jpg',
       disponibile: false
@@ -75,7 +75,7 @@ const prodotti = [
    {
       nome: 'Divano in alcantara',
       categoria: 'Mobili',
-      prezzo: '2.350',
+      prezzo: '2.350 €',
       rating: 4,
       immagine: 'img.jpg',
       disponibile: false
@@ -83,7 +83,7 @@ const prodotti = [
    {
       nome: 'Pennarelli',
       categoria: 'Cancelleria',
-      prezzo: '2.50',
+      prezzo: '2.50 €',
       rating: 3,
       immagine: 'img.jpg',
       disponibile: true
@@ -91,7 +91,7 @@ const prodotti = [
    {
       nome: 'Zaino',
       categoria: 'Cancelleria',
-      prezzo: '20',
+      prezzo: '20 €',
       rating: 3,
       immagine: 'img.jpg',
       disponibile: true
@@ -99,7 +99,7 @@ const prodotti = [
    {
       nome: 'Armadio',
       categoria: 'Mobili',
-      prezzo: '900',
+      prezzo: '900 €',
       rating: 3,
       immagine: 'img.jpg',
       disponibile: false
@@ -107,7 +107,7 @@ const prodotti = [
    {
       nome: 'Quaderno',
       categoria: 'Cancelleria',
-      prezzo: '1',
+      prezzo: '1 €',
       rating: 3,
       immagine: 'img.jpg',
       disponibile: true
@@ -193,7 +193,19 @@ console.log(filtroDisponibiltaERating(prodotti));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const esercizi = document.querySelector("table");
 
+function renderProdotti(prodotti) {
+   for (let i = 0; i < prodotti.length; i++) {
+      esercizi.innerHTML += `<tr>
+       <td>${prodotti[i].nome} </td>
+       <td> ${prodotti[i].prezzo}</td>
+       <td>'${prodotti[i].categoria}</td>
+        <td>'${prodotti[i].rating}</td>
+      </tr>`;
+   }
+}
+renderProdotti(prodotti);
 
 
 /* VERSIONE AVANZATA — Aggiungi al carrello

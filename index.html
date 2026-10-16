@@ -1,38 +1,170 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amazon Homepage — Week Project</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
 
   <header>
     <!-- Logo, barra di ricerca, link Account / Ordini / Carrello -->
-     
+    <h3> amazon</h3>
+    <form>
+      <input type="search" id="barra-ricerca" name="barra-ricerca" placeholder="Cerca prodotti, categorie, brand..." />
+      <button type="submit">Cerca</button>
+    </form>
+    <a href="javascript:void(0);">Account</a>
+    <a href="javascript:void(0);">Ordini</a>
+    <a href="javascript:void(0);">Carrello (0)</a>
   </header>
 
   <main>
 
     <section class="hero">
       <!-- Titolo grande, sottotitolo -->
+      <h1>Le offerte di oggi</h1>
+      <h4> Sconti fino al 70% su elettronica, libri, casa e molto altro </h4>
     </section>
 
     <section class="categorie">
       <!-- 4 card categoria -->
+      <p>Categorie</p>
+
+      <div id="1">
+        <h2>Elettronica</h2>
+        <p>Elettronica</p>
+        <a href="javascript:void(0);">Scorpri di più</a>
+      </div>
+
+      <div id="2">
+        <h2>LIbri</h2>
+        <p>LIbri</p>
+        <a href="javascript:void(0);">Scorpri di più</a>
+      </div>
+
+      <div id="3">
+        <h2>Abbigliamento</h2>
+        <p>Abbigliamento</p>
+        <a href="javascript:void(0);">Scorpri di più</a>
+      </div>
+
+      <div id="4">
+        <h2>Casa</h2>
+        <p>Casa</p>
+        <a href="javascript:void(0);">Scorpri di più</a>
+      </div>
+
     </section>
 
     <section class="prodotti">
-      <!-- Griglia prodotti (Versione Base: HTML statico; Intermedia/Avanzata: generata da JS) -->
+      <!-- Griglia prodotti più venduti -->
+      <p> I più venduti </p>
+
+      <div>
+        <h2>Cuffie</h2>
+        <p>Cuffie wireless con cancellazione del rumore</p>
+        <p>★★★★☆ (4.2) </p>
+        <p>€ 89,99</p>
+        <button type="submit">Aggiungi al carrello</button>
+      </div>
+
+      <div>
+        <h2>Tablet</h2>
+        <p>Tablet 10 pollici 64GB</p>
+        <p>★★★★★ (4.7) </p>
+        <p>€ 199,00</p>
+        <button type="submit">Aggiungi al carrello</button>
+      </div>
+
+      <div>
+        <h2>Libro</h2>
+        <p>Il romanzo dell'anno</p>
+        <p>★★★★☆ (4.0) </p>
+        <p>€ 14,90</p>
+        <button type="submit">Aggiungi al carrello</button>
+      </div>
+
+      <div>
+        <h2>Zaino</h2>
+        <p>Zaino da viaggio 30L impermeabile</p>
+        <p>★★★★☆ (4.3) </p>
+        <p>€ 49,99</p>
+        <button type="submit">Aggiungi al carrello</button>
+      </div>
+
+      <div>
+        <h2>Lampada</h2>
+        <p>Lampada LED da scrivania orientabile</p>
+        <p>★★★☆☆ (3.8) </p>
+        <p>€ 29,50</p>
+        <button type="submit">Aggiungi al carrello</button>
+      </div>
+
+      <div>
+        <h2>Smartwatch</h2>
+        <p>Smartwatch fitness con GPS</p>
+        <p>★★★★☆ (4.4) </p>
+        <p>€ 119,00</p>
+        <button type="submit">Aggiungi al carrello</button>
+      </div>
+
+      <div>
+        <h2>Mouse</h2>
+        <p>Mouse ergonomico wireless</p>
+        <p>★★★★☆ (4.1) </p>
+        <p>€ 24,90</p>
+        <button type="submit">Aggiungi al carrello</button>
+      </div>
+
+      <div>
+        <h2>Caffettiera</h2>
+        <p>Caffettiera moka 6 tazze</p>
+        <p>★★★★★ (4.6) </p>
+        <p>€ 22,00</p>
+        <button type="submit">Aggiungi al carrello</button>
+      </div>
+
     </section>
 
   </main>
 
   <footer>
     <!-- 3 colonne di link -->
+    <table>
+      <thead>
+        <tr>
+          <th> Chi siamo </th>
+          <th> Aiuto </th>
+          <th> Connettiti</th> </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> <a href="javascript:void(0);">Lavora con noi</a> </td>
+          <td> <a href="javascript:void(0);">Centro assistenza </a></td>
+          <td> <a href="javascript:void(0);">Facebook</a></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td> <a href="javascript:void(0);">Investitori</a> </td>
+          <td> <a href="javascript:void(0);">Spedizioni</a> </td>
+          <td> <a href="javascript:void(0);">Instagram</a> </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td> <a href="javascript:void(0);">Sostenibilità</a> </td>
+          <td> <a href="javascript:void(0);"> Resi e rimborsi </a></td>
+          <td> <a href="javascript:void(0);">YouTube</a> </td>
+        </tr>
+      </tbody>
+    </table>
   </footer>
 
-  <script src="script.js"></script>
 </body>
+
 </html>

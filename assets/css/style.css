@@ -22,11 +22,14 @@ a {
   text-decoration: none;
 }
 
-button {
+form button {
   font-family: inherit;
   cursor: pointer;
   border: none;
-  background: none;
+  border-top-right-radius: 2px ;
+  border-bottom-right-radius: 2px;
+  background: #febd69; ;
 }
 
 /* Scrivi qui sotto i tuoi stili */
+

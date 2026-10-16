@@ -200,8 +200,8 @@ function renderProdotti(prodotti) {
       esercizi.innerHTML += `<tr>
        <td>${prodotti[i].nome} </td>
        <td> ${prodotti[i].prezzo}</td>
-       <td>'${prodotti[i].categoria}</td>
-        <td>'${prodotti[i].rating}</td>
+       <td> ${prodotti[i].categoria}</td>
+       <td> ${prodotti[i].rating}</td>
       </tr>`;
    }
 }

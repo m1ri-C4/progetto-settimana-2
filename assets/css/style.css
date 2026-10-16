@@ -12,6 +12,15 @@ body {
     background: #eee;
 }
 
+/* -----------  FOGLIO JAVA  -------- */
+
+#java a{
+    color: #111;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
 /* -----------  HEADER  -------- */
 header {
     background-color: #131921;

@@ -120,7 +120,7 @@ header button {
     border: 1px solid #e6e0d3;
     border-radius: 8px;
     background-color: white;
-    width: 24%;
+    width: 400px;
 }
 
 #uno {
@@ -171,6 +171,30 @@ header button {
 #due,
 #tre,
 #quattro:hover {}
+
+/* -----------  PRODOTTI  -------- */
+
+.prodotti div h2 {
+    background-color: grey;
+    display: inline-block;
+    width: 90%;
+    border-radius: 8px 8px 0 0;
+    padding: 40px;
+    height: 200px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.prodotti div {
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+    border: 1px solid #e6e0d3;
+    border-radius: 8px;
+    background-color: white;
+    width: 20%;
+
+}
 
 /* -----------  FOOTER  -------- */
 footer {
